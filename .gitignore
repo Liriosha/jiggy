@@ -1,0 +1,23 @@
+# Exclude everything by default
+/*
+
+# Except for tracked top-level project directories
+!/iggy/
+!/tests/
+!/functions.txt
+!/.devcontainer/
+!/.github/
+!/.github-assets/
+!/targets/
+!/tools/
+!/subprojects/
+/subprojects/*
+!/subprojects/*.wrap
+!/subprojects/packagefiles
+!/.clang-format
+!/.git-blame-ignore-revs
+!/.gitattributes
+!/.gitignore
+!/.gitmodules
+!/meson.build
+!/README.md
