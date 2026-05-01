@@ -29,7 +29,7 @@
 
 #define NTELEMETRY 1
 
-#define TM_CONTEXT_LITE(val) ((char *)(val))
-#define TM_CONTEXT_FULL(val) ((char *)(val))
+#define TM_CONTEXT_LITE(val) ((char*)(val))
+#define TM_CONTEXT_FULL(val) ((char*)(val))
 
-#define HTELEMETRY char *
+#define HTELEMETRY char*

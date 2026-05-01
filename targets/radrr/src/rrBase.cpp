@@ -1,13 +1,16 @@
 #include "rrBase.h"
 
 #ifdef _DEBUG
-  typedef char bool_size_error[ ( sizeof(rrbool) == 4 ) ? 1 : -1 ];  // make sure our rrbool is 4 bytes
+typedef char bool_size_error[(sizeof(rrbool) == 4)
+                                 ? 1
+                                 : -1];  // make sure our rrbool is 4 bytes
 #endif
 
 /*
 // CB : enum might be a little better than the rrbool as S32
 
-// no it's not, none of this works rrbool in C++ needs to be interchangeable with bool
+// no it's not, none of this works rrbool in C++ needs to be interchangeable
+with bool
 //	which pretty much means it must be just an int
 
 // best solution it to just not use bool as much as possible

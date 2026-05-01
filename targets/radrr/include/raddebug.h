@@ -2,7 +2,7 @@
 #define __RADDEBUGH__
 
 #ifndef __RADRR_COREH__
-  #include "rrCore.h"
+#include "rrCore.h"
 #endif
 
 #define radassert rrassert

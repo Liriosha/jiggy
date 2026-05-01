@@ -24,7 +24,7 @@ RADDEFFUNC S32 RADLINK rrGetSpinCount(void);
 // CB : PS3 gets upset if you spin too much; don't!
 // #define rrGetSpinCount() 300
 #define rrGetSpinCount() 60
-#elif defined(__RADPSP__) || defined(__RADWII__) || defined(__RADNDS__) ||     \
+#elif defined(__RADPSP__) || defined(__RADWII__) || defined(__RADNDS__) || \
     defined(__RADPS2__)
 #define RR_MAX_CPUS 1
 #define rrGetTotalCPUs 1
@@ -61,7 +61,7 @@ RADDEFFUNC S32 RADLINK rrGetSpinCount(void);
 #define rrGetSpinCount() 300
 #elif defined(__RADSEKRIT__)
 
-#define RR_MAX_CPUS 6 // not definitive, all of this is speculative.
+#define RR_MAX_CPUS 6  // not definitive, all of this is speculative.
 #define rrGetSpinCount() 300
 #else
 // TODO: fill in the slower cpu functinos below, since the wiiu cores are

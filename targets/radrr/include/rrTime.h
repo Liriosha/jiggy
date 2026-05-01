@@ -28,7 +28,7 @@ RADDEFFUNC U64 rrGetThreadTicks(void);
 
 RADDEFFUNC F64_OR_32 rrTimeToSeconds(U64 time);
 RADDEFFUNC U64
-rrTimePerSecond(void); // returns how many units of rrtime == one sec
+rrTimePerSecond(void);  // returns how many units of rrtime == one sec
 
 // note : Millis and Micros should only be used temporarily for deltas
 //	you can NOT store them over time, because the U64 will overflow
@@ -52,8 +52,8 @@ RADDEFFUNC F64_OR_32 rrTicksToSeconds(U64 time);
 #define rrGetTSC() rrTicksToCycles(rrGetTicks())
 #define rrGetThreadTSC() rrTicksToCycles(rrGetThreadTicks())
 #define rrGetPerformanceCounter() rrGetTime()
-#define rrPerformanceCounterDeltaSeconds(start, end)                           \
-  rrTimeToSeconds((end) - (start))
+#define rrPerformanceCounterDeltaSeconds(start, end) \
+    rrTimeToSeconds((end) - (start))
 #define rrGetTSC_Scale() (1)
 #define rrGetTSC_TicksPerSec() (1)
 
@@ -78,4 +78,4 @@ RADDEFFUNC void spu_rrSyncTimeTop32(U64 ppu_time);
 
 #endif
 
-#endif // __RADRR_TIMEH__
+#endif  // __RADRR_TIMEH__
