@@ -13,10 +13,10 @@ sources = files(
 lib_iggy = static_library(
     'iggy',
     sources,
-    include_directories: include_directories('include', '../rad/include'),
+    include_directories: include_directories('include', '../radrr/include'),
 )
 
 iggy_dep = declare_dependency(
     link_with: lib_rad,
-    include_directories: include_directories('include', '../rad/include'),
+    include_directories: include_directories('include', '../radrr/include'),
 )

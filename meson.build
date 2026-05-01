@@ -7,7 +7,7 @@ project(
     meson_version: '>= 1.1',
 )
 
-subdir('targets/rad')
+subdir('targets/radrr')
 subdir('targets/iggy')
 
 lib = shared_library(
